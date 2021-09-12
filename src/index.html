@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="Description" content="Crop and resize - Free, open, ad free and private image crop and resize">
+    <meta name="theme-color" content="#5dadec"/>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="mvp.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="icons-192_apple.png">
+    <title>Crop and resize - Free, open, ad free and private image crop and resize</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>Crop and resize requires Javascript to function</strong>
+    </noscript>
+    <main>
+        <section>
+            <header>
+            <h1>Crop and resize</h1>
+            </header>
+
+            <form>
+                <label for="imgInput">Select image:</label>
+                <input type="file" id="imgInput" name="imgInput" accept="image/*"> 
+            </form>
+        </section>
+        <hr>
+        <canvas id="inputCanvas" width="200" height="100"></canvas>
+        <p id="inputResolution"></p>
+        <hr>
+        <section>
+            <form>
+                <header>
+                    <h4>Crop ✂️</h4>
+                </header>
+                <label for="topCrop">Crop pixels from top:</label>
+                <input type="number" id="topCrop" name="topCrop" value="0" min="0" disabled>
+
+                <label for="leftCrop">Crop pixels from left:</label>
+                <input type="number" id="leftCrop" name="leftCrop" value="0" min="0" disabled>
+
+                <label for="rightCrop">Crop pixels from right:</label>
+                <input type="number" id="rightCrop" name="rightCrop" value="0" min="0" disabled>
+
+                <label for="botCrop">Crop pixels from bottom:</label>
+                <input type="number" id="botCrop" name="botCrop" value="0" min="0" disabled>
+
+                <label for="afterCropSize">Size after crop:</label>
+                <input type="text" id="afterCropSize" name="afterCropSize" value="" readonly>
+            </form>
+            <form>
+                <header>
+                    <h4>Resize ⏬</h4>
+                </header>
+                <label for="wantedWidth">Wanted width in pixels:</label>
+                <input type="number" id="wantedWidth" name="wantedWidth" min="1" disabled>
+
+                <label for="wantedHeight">Wanted height in pixels:</label>
+                <input type="number" id="wantedHeight" name="wantedHeight" min="1" disabled>
+                <button type="button" id="2xCropSize" disabled>2x crop sizes</button><br>
+                <button type="button" id="1xCropSize" disabled>1x crop sizes</button><br>
+                <button type="button" id="05xCropSize" disabled>0.5x crop sizes</button><br>
+                <button type="button" id="025xCropSize" disabled>0.25x crop sizes</button>
+            </form>
+        </section>
+        <canvas id="outputCanvas" width="200" height="100"></canvas><br>
+        <button type="button" id="savePng" disabled>Save as .png</button>
+        <button type="button" id="saveJpg" disabled>Save as .jpg</button><br>
+    </main>
+
+    <footer>
+      <hr>
+      <p>
+        <small>
+            Crop and resize - <i id="buildInfo"></i> - <a href="info.html">Info</a>
+        </small>
+      </p>
+    </footer>
+  </body>
+  <script type="module" src="crop-and-resize.js"></script>
+</html>
