@@ -16,7 +16,7 @@ or use fastbundle.sh or fastbundle.ps1
 
 Run following commands to full bundle (full means build info is filled)
 ```
-deno bundle -c tsconfig.json src/crop-and-resize.ts src/crop-and-resize.js
+fullbundle.sh
 ```
 or use fullbundle.sh or fullbundle.ps1
 
