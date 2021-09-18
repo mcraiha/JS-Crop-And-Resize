@@ -26,5 +26,12 @@
     "scope": "/",
     "start_url": "/",
     "orientation": "portrait",
-    "categories": ["crop", "images", "photo", "resize"]
+    "categories": ["crop", "images", "photo", "resize"],
+    "shortcuts" : [
+      {
+        "name": "Info",
+        "url": "/info.html",
+        "description": "Info about Crop & Resize"
+      }
+    ]
   }
