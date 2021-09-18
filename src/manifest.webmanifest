@@ -19,5 +19,6 @@
     "display": "standalone",
     "scope": "/",
     "start_url": "/",
-    "orientation": "portrait"
+    "orientation": "portrait",
+    "categories": ["crop", "images", "photo", "resize"]
   }
