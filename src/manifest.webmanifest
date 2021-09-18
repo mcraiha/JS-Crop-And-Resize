@@ -1,7 +1,7 @@
 {
     "name": "Crop and resize",
     "short_name": "Crop&Resize",
-    "description": "Crop and resize - Free, open, ad free and private image crop and resize",
+    "description": "Crop and resize - Free, open, ad-free and private image crop and resize",
     "icons": [
         {
           "src": "icons-192.png",
