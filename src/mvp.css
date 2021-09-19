@@ -61,15 +61,21 @@ header,
 main {
     margin: 0 auto;
     max-width: var(--width-content);
-    padding: 3rem 1rem;
+    padding: 1rem 1rem;
 }
 
 hr {
     background-color: var(--color-bg-secondary);
     border: none;
     height: 1px;
-    margin: 4rem 0;
+    margin: 1rem 0;
     width: 100%;
+}
+
+canvas {
+    display: block;
+    padding: 0;
+    margin: auto;
 }
 
 section {
@@ -286,7 +292,7 @@ button {
     font-weight: bold;
     line-height: var(--line-height);
     margin: 0.5rem 0;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
 }
 
 button {
@@ -354,13 +360,13 @@ form {
     display: block;
     max-width: var(--width-card-wide);
     min-width: var(--width-card);
-    padding: 1.5rem;
+    padding: 0.5rem;
     text-align: var(--justify-normal);
 }
 
 form header {
-    margin: 1.5rem 0;
-    padding: 1.5rem 0;
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
 }
 
 input,
