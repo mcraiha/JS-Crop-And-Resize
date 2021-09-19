@@ -76,4 +76,4 @@ typings/
 .fusebox/
 
 # For this project
-*.js
+crop-and-resize.js
