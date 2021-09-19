@@ -176,6 +176,10 @@ if (saveJpgButton)
       });
 }
 
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js');
+}
+
 fillBuildInfo('buildInfo', buildDate, gitShortHash);
 
 export function wantedWidthUpdated(event: Event): void {
