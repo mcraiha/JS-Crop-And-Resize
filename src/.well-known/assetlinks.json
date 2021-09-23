@@ -1,0 +1,7 @@
+[{
+        "relation": ["delegate_permission/common.handle_all_urls"],
+        "target" : { "namespace": "android_app", "package_name": "rocks.raiha.cropandresize.twa",
+                     "sha256_cert_fingerprints": ["0D:23:76:02:BD:6B:85:D1:E8:DE:26:C5:7D:CD:A7:3D:E1:33:2C:15:98:D0:27:D5:53:23:7B:62:8D:8D:67:A2",
+													"51:90:5D:84:D1:0B:ED:18:41:DA:32:4E:5B:BE:0A:FE:D0:6F:B9:10:C3:B0:C0:1C:C7:CB:51:50:07:4A:DE:B3"] }
+      }
+]
