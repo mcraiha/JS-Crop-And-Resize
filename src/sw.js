@@ -1,7 +1,7 @@
 // Service worker
 
 // Cache name, increase during updates
-const PRECACHE = 'v1';
+const PRECACHE = 'v2';
 
 // Pre cached URLS
 const PRECACHE_URLS = [
