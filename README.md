@@ -20,6 +20,17 @@ fullbundle.sh
 ```
 or use fullbundle.sh or fullbundle.ps1
 
+## Docker
+
+If you want to compile the code and test it out in your browser, then you can use 
+```bash
+docker build -t jscropandresize .
+```
+and
+```bash
+docker run -p 8088:80 jscropandresize
+```
+to create and run docker image, after that you can open [http://localhost:8088](http://localhost:8088) in your browser
 
 ## License
 
