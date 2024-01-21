@@ -29,6 +29,9 @@
     "start_url": "/",
     "orientation": "portrait",
     "categories": ["crop", "images", "photo", "resize"],
+    "launch_handler": {
+      "client_mode": "auto"
+    },
     "shortcuts" : [
       {
         "name": "Info",
