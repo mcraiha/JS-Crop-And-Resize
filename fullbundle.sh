@@ -12,4 +12,4 @@ sed -i "s/{0}/$tsc_version/g" src/crop-and-resize.ts
 sed -i "s/{1}/$git_short_hash/g" src/crop-and-resize.ts
 sed -i "s/{2}/$current_date/g" src/crop-and-resize.ts
 
-deno bundle -c tsconfig.json src/crop-and-resize.ts src/crop-and-resize.js
+deno bundle --platform browser src/crop-and-resize.ts -o src/crop-and-resize.js

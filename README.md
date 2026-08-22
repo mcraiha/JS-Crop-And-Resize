@@ -9,13 +9,13 @@ Because I needed something like this for myself
 ## How to bundle
 
 Run following command to fast bundle (fast means build info is not filled)
-```
-deno bundle -c tsconfig.json src/crop-and-resize.ts src/crop-and-resize.js
+```bash
+deno bundle --platform browser src/crop-and-resize.ts -o src/crop-and-resize.js
 ```
 or use fastbundle.sh or fastbundle.ps1
 
 Run following commands to full bundle (full means build info is filled)
-```
+```bash
 fullbundle.sh
 ```
 or use fullbundle.sh or fullbundle.ps1
