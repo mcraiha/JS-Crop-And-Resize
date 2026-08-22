@@ -37,3 +37,5 @@ to create and run docker image, after that you can open [http://localhost:8088](
 All code files (*.ts) and HTML files (*.html) are under [Unlicense](https://unlicense.org/)
 
 The CSS file (mvp.css) is under [MIT License](https://github.com/andybrewer/mvp/blob/master/LICENSE).
+
+Icon files are under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/) -license. Icon is made of ⏬ and ✂️ emojis that are part of [Twemoji](https://github.com/jdecked/twemoji) project
