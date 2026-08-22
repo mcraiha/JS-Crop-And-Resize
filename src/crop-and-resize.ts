@@ -176,6 +176,18 @@ if (saveJpgButton)
       });
 }
 
+const saveWebpButton = document.getElementById('saveWebp');
+if (saveWebpButton)
+{
+    const saveWebpButtonActualInput: HTMLInputElement = <HTMLInputElement>saveWebpButton;
+    saveWebpButtonActualInput.addEventListener('click', () => {
+        const link = document.createElement('a');
+        link.download = 'download.webp';
+        link.href = outputCanvas.toDataURL('image/webp');
+        link.click();
+      });
+}
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js');
 }
@@ -246,6 +258,7 @@ export function enableInputs()
 
     (<HTMLInputElement>savePngButton).disabled = false;
     (<HTMLInputElement>saveJpgButton).disabled = false;
+    (<HTMLInputElement>saveWebpButton).disabled = false;
 }
 
 export function RenderFromAppState(appState: AppState, inputCanvasContext: CanvasRenderingContext2D, outputCanvasContext: CanvasRenderingContext2D, outputCanvas: HTMLCanvasElement, afterCropSizeElement: HTMLInputElement)
