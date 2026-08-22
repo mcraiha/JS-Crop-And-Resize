@@ -167,8 +167,8 @@ if (savePngButton)
 const saveJpgButton = document.getElementById('saveJpg');
 if (saveJpgButton)
 {
-    const savePngButtonActualInput: HTMLInputElement = <HTMLInputElement>saveJpgButton;
-    savePngButtonActualInput.addEventListener('click', () => {
+    const saveJpgButtonActualInput: HTMLInputElement = <HTMLInputElement>saveJpgButton;
+    saveJpgButtonActualInput.addEventListener('click', () => {
         const link = document.createElement('a');
         link.download = 'download.jpg';
         link.href = outputCanvas.toDataURL('image/jpeg', 0.9);
